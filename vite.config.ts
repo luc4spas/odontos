@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Pin Nitro to Netlify preset for SSR via Netlify Functions
+  nitro: {
+    preset: "netlify",
+  },
 });
